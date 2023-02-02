@@ -1,5 +1,5 @@
 import React from "react"
-import ReactDOM from "react-dom"
+import ReactDOM from "react-dom/client"
 
 function TemporaryList() {
   return (
@@ -14,4 +14,5 @@ function TemporaryList() {
   )
 }
 
-ReactDOM.render(<TemporaryList/>, document.getElementById("root"))
+// ReactDOM.render(<TemporaryList/>, document.getElementById("root"))
+ReactDOM.createRoot(document.getElementById("root")).render(<TemporaryList()/>)
